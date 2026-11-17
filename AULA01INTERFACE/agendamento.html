@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Vacina</title>
+</head>
+<body>
+    <h2>Agendamento de Vacina</h2>
+
+    <form onsubmit="return false;">
+        <label for="nomecrianca">Nome da criança*</label><br>
+        <input type="text" id="nomecrianca" name="nomecrianca" required placeholder="Digite o nome da criança">
+        <br><br>
+
+        <label for="nascimento">Data de nascimento*</label><br>
+        <input type="date" id="nascimento" name="nascimento" required>
+        <br><br>
+
+        <label for="vacina">Vacina*</label><br>
+        <select id="vacina" name="vacina" required>
+            <option value="">Selecione a vacina</option>
+            <option value="bcg">BCG</option>
+            <option value="hepatiteb">Hepatite B</option>
+            <option value="pentavalente">Pentavalente</option>
+            <option value="vip">Poliomielite (VIP)</option>
+            <option value="rotavirus">Rotavírus</option>
+            <option value="pneumococica">Pneumocócica</option>
+            <option value="meningococica">Meningocócica C</option>
+            <option value="febreamarela">Febre amarela</option>
+            <option value="triplice">Tríplice viral</option>
+            <option value="gripe">Gripe (Influenza)</option>
+        </select>
+        <br><br>
+
+        <label for="data">Data da vacinação*</label><br>
+        <input type="date" id="data" name="data" required>
+        <br><br>
+
+        <label for="horario">Horário*</label><br>
+        <input type="time" id="horario" name="horario" required>
+        <br><br>
+
+        <label for="unidade">Unidade de saúde*</label><br>
+        <select id="unidade" name="unidade" required>
+            <option value="">Selecione a unidade</option>
+            <option value="central">UBS Central</option>
+            <option value="norte">UBS Norte</option>
+            <option value="sul">UBS Sul</option>
+        </select>
+        <br><br>
+
+        <button type="submit" class="btn-primary-entrar">Agendar</button>
+        <a href="pasta.html" class="link">Voltar</a>
+    </form>
+</body>
+</html>
